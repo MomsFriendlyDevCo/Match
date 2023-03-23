@@ -1,0 +1,59 @@
+{
+  "name": "@momsfriendlydevco/Match",
+  "version": "1.0.0",
+  "description": "Simple string matching / globbing / RegEx matching",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint lib plugins test",
+    "test": "mocha"
+  },
+  "keywords": [
+    "glob",
+    "match",
+    "string",
+    "compare"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MomsFriendlyDevCo/Match.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MomsFriendlyDevCo/Match/issues"
+  },
+  "homepage": "https://github.com/MomsFriendlyDevCo/Match#readme",
+  "author": "Matt Carter <m@ttcarter.com>",
+  "license": "MIT",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*.js"
+  },
+  "imports": {
+    "#lib/*": "./lib/*.js",
+    "#main": "./lib/index.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "es6": true,
+      "mocha": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 13,
+      "sourceType": "module"
+    }
+  },
+  "dependencies": {
+    "picomatch": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.33.0",
+    "mocha": "^10.2.0"
+  }
+}
