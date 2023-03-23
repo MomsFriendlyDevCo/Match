@@ -1,5 +1,5 @@
 {
-  "name": "@momsfriendlydevco/Match",
+  "name": "@momsfriendlydevco/match",
   "version": "1.0.0",
   "description": "Simple string matching / globbing / RegEx matching",
   "main": "lib/index.js",
