@@ -2,10 +2,20 @@
 ========================
 Simple string matching / globbing / RegEx matching.
 
+* Isomorphic, "just works" functionality in the browser / node - already minified, upstream shims already applied
+* Works with arrays of patterns
+* Compatibility with `*.globs` / `"/regexp/"`
+* Returns a simple matcher function without object / classing overhead
+
 
 Why
 ---
-I couldn't find a library that combined array-inputs, RegExp matching and a pre-compiled function factory pattern.
+I couldn't find a library that did what I wanted:
+
+* [micromatch](https://github.com/micromatch/micromatch) & [picomatch](https://github.com/micromatch/picomatch) - Both require shiming of `process` and `path` to work properly in the browser without screwing around with Webpack
+* [nanomatch](https://github.com/micromatch/nanomatch) - Doens't support brace expansion
+* All of the above have hit-and-miss support for arrays of globs
+* None of them are out-of-the-box extendable to also cope with `"/regexp/"` strings as well as globs
 
 
 ```javascript
