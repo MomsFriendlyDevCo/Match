@@ -35,6 +35,13 @@ In all cases patterns can be:
 * An array of any combination of the above
 
 
+`options` for all API's are passed directly onto the [picomatch](https://github.com/micromatch/picomatch) library **except** for the following which are parsed then removed before being passed to picomatach:
+
+| Option | Type      | Default | Description                                                               |
+|--------|-----------|---------|---------------------------------------------------------------------------|
+| `csv`  | `boolean` | `false` | If the input is a single string, split it using CSV rules, before parsing |
+
+
 Match.isMatch(patterns, subject, options)
 -----------------------------------------
 Return a simple boolean if the subject matches any of the given patterns.
