@@ -15,6 +15,7 @@ await esbuild.build({
 	bundle: true,
 	minify: true,
 	outdir: './dist',
+	format: 'esm',
 	plugins: [
 		replaceGlobals({ // Shim the `path` module - we only need `sep` anyway
 			path: "{sep: '/'}",
