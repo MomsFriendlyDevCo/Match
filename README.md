@@ -19,7 +19,7 @@ I couldn't find a library that did what I wanted:
 
 
 ```javascript
-import match from '@momsfriendlydevco/match;l
+import match from '@momsfriendlydevco/match';
 
 // Simple string matching
 match.isMatch('*.js', 'hello.js') //= true
@@ -58,8 +58,8 @@ Return a simple boolean if the subject matches any of the given patterns.
 Options is any valid config for [picomatch](https://github.com/micromatch/picomatch).
 
 ```javascript
-import match from '@momsfriendlydevco/match;l
-import {isMatch} from '@momsfriendlydevco/match; // ... OR as spread export
+import match from '@momsfriendlydevco/match';
+import {isMatch} from '@momsfriendlydevco/match'; // ... OR as spread export
 
 match.isMatch('*.js', 'hello.js') //= true
 match.isMatch(['*.js', '.txt'], 'hello.js') //= true
@@ -74,8 +74,8 @@ Create a function which can be used to match against subsequent subjects.
 Options is any valid config for [picomatch](https://github.com/micromatch/picomatch).
 
 ```javascript
-import match from '@momsfriendlydevco/match;
-import {compile} from '@momsfriendlydevco/match; // ... OR as spread export
+import match from '@momsfriendlydevco/match';
+import {compile} from '@momsfriendlydevco/match'; // ... OR as spread export
 
 let matcher = match.compile(['*.js', '/\.txt$/']);
 
