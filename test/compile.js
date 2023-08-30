@@ -1,7 +1,6 @@
 import {expect} from 'chai';
 import match from '#main';
 import compile from '#lib/compile';
- /* eslint-disable no-useless-escape */
 
 describe('@MomsFriendlyDevCo/Match#compile', ()=> {
 
