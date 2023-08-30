@@ -1,6 +1,6 @@
 {
   "name": "@momsfriendlydevco/match",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple string matching / globbing / RegEx matching",
   "main": "lib/index.js",
   "type": "module",
