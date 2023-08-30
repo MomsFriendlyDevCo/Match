@@ -31,12 +31,16 @@
   },
   "exports": {
     ".": {
-      "browser": "./dist/index.js",
-      "default": "./lib/index.js"
+      "default": "./lib/index.js",
+      "browser": "./dist/esm/index.js",
+      "import": "./lib/index.js",
+      "require": "./dist/cjs/index.cjs"
     },
     "./*": {
-      "browser": "./dist/*.js",
-      "default": "./lib/*.js"
+      "default": "./lib/*.js",
+      "browser": "./dist/esm/*.js",
+      "import": "./lib/*.js",
+      "require": "./dist/cjs/*.cjs"
     }
   },
   "imports": {

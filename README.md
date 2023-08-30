@@ -6,6 +6,7 @@ Simple string matching / globbing / RegEx matching.
 * Works with arrays of patterns
 * Compatibility with `*.globs` / `"/regexp/"`
 * Returns a simple matcher function without object / classing overhead
+* Both ESM and CJS support
 
 
 Why
