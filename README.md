@@ -41,7 +41,7 @@ API
 ===
 In all cases patterns can be:
 * A single glob expression
-* A string surrounded by `/` indicating it should be treated as a RegExp match
+* A string surrounded by `/` indicating it should be treated as a RegExp match (with optional RegExp flags)
 * A raw RegEx
 * An array of any combination of the above
 

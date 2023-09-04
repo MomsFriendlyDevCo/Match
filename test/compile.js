@@ -14,8 +14,11 @@ describe('@MomsFriendlyDevCo/Match#compile', ()=> {
 
 	it('simple string to string regex', ()=> {
 		expect(compile('/\.js$/')('hello.js')).to.be.true;
+		expect(compile('/\.JS$/i')('hello.js')).to.be.true;
 		expect(compile('/\.js$/')('hello.txt')).to.be.false;
 		expect(compile(/\.js$/)('hello.js')).to.be.true;
+		expect(compile(/\.JS$/i)('hello.js')).to.be.true;
+		expect(compile(/\.JS$/gi)('hello.js')).to.be.true;
 		expect(compile(/\.js$/)('hello.txt')).to.be.false;
 
 		expect(match.compile('*.js')('hello.js')).to.be.true;
@@ -29,7 +32,7 @@ describe('@MomsFriendlyDevCo/Match#compile', ()=> {
 
 		// Note: CSV mode disabled, these will all fail
 		expect(compile('*.js,/\.txt$/')('hello.js')).to.be.false;
-		expect(compile('*.js,/\.txt$/')('hello.txt')).to.be.false;
+		expect(compile('*.js,/\.TXT$/i')('hello.txt')).to.be.false;
 		expect(compile('*.js,/\.txt$/')('hello.css')).to.be.false;
 
 		// CSV mode splitting
